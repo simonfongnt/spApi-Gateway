@@ -8,26 +8,32 @@
 The following structure is final. It may be worth visiting [Sharp Point](http://sharppoint.com.hk/algo.php?lang=1&mod=api) and see if the shared library (`include` and `lib`) is up-to-date. The file shown below would be referred in the following sections.
 ```
 project
-|--include
+|--include          (from example)
 |  |--ApiProxyWrapper.h
 |  |--ApiProxyWrapperReply.h
 |  |--CCTypes.h
 |  |--SPApiProxyDataType.h
-|--lib
+|--lib              (from example)
 |  |--libapiwrapper.so
-|--py
-|--app.py
-|--spGateway.sh
-|--spGateway.h
-|--spGateway.cpp
-|--main.cpp
-|--makefile
+|--py               (copy from here)
+|--app.py           (copy from here)
+|--spGateway.sh     (copy from here)
+|--spGateway.h      (copy from here)
+|--spGateway.cpp    (copy from here)
+|--main.cpp         (replace from here)
+|--makefile         (replace from here)
+|--const.txt        (copy from here)
+|--login.txt        (create by user)
 ```
 
 ## Build and Run Executable
-With the files in this project, just simply use these commands:
-- `make` to create the executable
-- `./spGateway.sh` to run the executable
+With the example project, put the following files into the folder before the build:
+1. check if Shared Library is up-to-date
+2. copy this `py` folder
+3. copy this `app.py`, `spGateway.sh`, `spGateway.h` and `spGateway.cpp`
+4. replace this`main.cpp` and `makefile` 
+5. `make` to create the executable
+6. `./spGateway.sh` to run the executable
 
 ## UI addon
 With pyQt, the executable can be interact with user. just simply type:
