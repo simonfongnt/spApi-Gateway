@@ -60,7 +60,7 @@ With pyQt, the executable can be interact with user. the steps are as follows:
 Further packaging can be done with pyinstaller by running this command in `x64/Release`: 
 ```
 pyinstaller --name "spGatewayWin64" ^
---noconsole --onefile^
+--noconsole --onefile ^
 --add-data="spapidllm64.lib;." ^
 --add-data="spapidllm64.dll;." ^
 --add-data="spGateway.exe;." ^

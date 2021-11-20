@@ -95,7 +95,7 @@ Requires to select product to place an order (`SPAPI_AddOrder`). The order price
 Requires to select position to change the order (`SPAPI_ChangeOrderBy`). Its order price will be changed to market price.
 
 #### order pending
-Requires to select product to place an pending order ('SPAPI_AddInactiveOrder'). The order price would be +300 for Short order and -300 for Long order so that it cannot be trade at once.
+Requires to select product to place an pending order (`SPAPI_AddInactiveOrder`). The order price would be +300 for Short order and -300 for Long order so that it cannot be trade at once.
 
 #### order activate [all]
 Requires to select existing order to be activated (`SPAPI_ActivateOrderBy`). if `all` is entered, all existing orders will be activated (`SPAPI_ActivateAllOrders`).
