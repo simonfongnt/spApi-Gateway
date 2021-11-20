@@ -87,3 +87,24 @@ There are numbers of `last` command to show data stored from callback.
 | | OnApiOrderBeforeSendReport | |
 | last trade  | OnApiTradeReport | Trade Details |
 | | OnApiLoadTradeReadyPush | |
+
+#### order
+Requires to select product to place an order (`SPAPI_AddOrder`). The order price would be +300 for Short order and -300 for Long order so that it cannot be trade at once.
+
+#### order change
+Requires to select position to change the order (`SPAPI_ChangeOrderBy`). Its order price will be changed to market price.
+
+#### order pending
+Requires to select product to place an pending order ('SPAPI_AddInactiveOrder'). The order price would be +300 for Short order and -300 for Long order so that it cannot be trade at once.
+
+#### order activate [all]
+Requires to select existing order to be activated (`SPAPI_ActivateOrderBy`). if `all` is entered, all existing orders will be activated (`SPAPI_ActivateAllOrders`).
+
+#### order inactivate [all]
+Requires to select existing order to be inactivated (`SPAPI_InactivateOrderBy`). if `all` is entered, all existing orders will be inactivated (`SPAPI_InactivateAllOrders`).
+
+#### order close
+Requires to select position to place an order (`SPAPI_AddOrder`). Selected position will be ordered with opposite quantity and market price.
+
+#### order delete [all]
+Requires to select existing order to be deleted (`SPAPI_DeleteOrderBy`). if `all` is entered, all existing orders will be deleted (`SPAPI_DeleteAllOrders`).

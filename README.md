@@ -38,3 +38,6 @@ The UI will keep restarting the executable in case of termination. It will also 
 * [Build and Run Executable](Linux/README.md#Build-and-Run-Executable)
 * [UI addon](Linux/README.md#UI-addon)
 ## [Testing Tool](tool/README.md)
+* [Requirements](Linux/README.md#Requirements)
+* [Run the tool](Linux/README.md#Run-the-tool)
+* [Usage](Linux/README.md#Usage)
